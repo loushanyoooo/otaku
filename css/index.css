@@ -1,4 +1,7 @@
 /* banner */
+.banner{
+    background-size: cover;
+}
 .banner .b1{
     background-image: url(../image/banner/01.jpg);
 }
