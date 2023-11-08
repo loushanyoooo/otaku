@@ -1,0 +1,270 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>宅宅T</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body class="bg" id="top">
+        <nav class="navbar navbarB navbar-expand-lg navbar-scroll">
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#menu" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse justify-content-center" id="menu">
+                <a href="#top" class="logo">宅</a>
+                <div class="navbar-nav underline">
+                    <div class="nav-item">
+                        <a href="special.html" class="nav-link">專區</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="special.html" class="nav-link">上身</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="special.htmlr" class="nav-link">下身</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="special.html" class="nav-link">鞋襪</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="special.html" class="nav-link">配件</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#Accessories" class="nav-link">客戶服務</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#Accessories" class="nav-link">搜尋</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#people">登入</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="/shopcar.html" class="nav-link c2 yellow">購物車</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 會員 -->
+        <div class="modal fade" id="people">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bgc1">
+                    <div class="modal-body p-4">
+                        <button class="close" data-dismiss="modal" aria-label="close">&times;</button>
+
+                        <ol class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a href="#p1" class="nav-link c2 active" aria-selected="true" data-toggle="pill">註冊</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#p2" class="nav-link c2" aria-selected="false" data-toggle="pill">登入</a>
+                            </li>
+                        </ol>
+
+                        
+                        <div class="tab-content bgc1 p-3 text-light">
+                            <div class="tab-pane fade active show" id="p1">
+                                <div class="title h3 p-3 c2">會員註冊</div>
+                                <div class="text p-2">不需繳任何會費，完全免費</div>
+
+                                <form action="">
+                                    <div class="form-group">
+                                        <label for="">姓名：</label>
+                                        <input type="text" class="form-group">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">連絡電話：</label>
+                                        <input type="text" class="form-group">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">電子信箱：</label>
+                                        <input type="text" class="form-group">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">密碼：</label>
+                                        <input type="text" class="form-group">
+                                    </div>
+
+                                    <div class="text-center">
+                                        <button class="btn btn-outline-warning" data-target="#pok1" data-toggle="modal" data-dismiss="modal">確認註冊</button>
+                                        <button class="btn btn-outline-secondary" type="reset">重新填寫</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="p2">
+                                <div class="title h3 p-3 c2">會員登入</div>
+
+                                <form action="">
+                                    <div class="form-group">
+                                        <label for="">電子信箱：</label>
+                                        <input type="text" class="form-group">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">密碼：</label>
+                                        <input type="text" class="form-group">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" class="m-1">
+                                        <label for="">確認密碼</label>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <button class="btn btn-outline-warning" data-target="#pok2" data-toggle="modal" data-dismiss="modal">確認登入</button>
+                                        <button class="btn btn-outline-secondary" type="reset">重新填寫</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 註冊成功 -->
+        <div class="modal fade" id="pok1">
+            <div class="modal-dialog modal-dialog-centered modal-sm">
+                <div class="modal-content">
+                    <div class="modal-body bgc1 p-4 text-center">
+                        <img src="image/ok.png" class="w-100 ok">
+                        <div class="text c3 pt-5">註冊成功</div>
+                        <div class="text c3">貼心小叮嚀：請勿將帳號密碼告訴他人，以免被盜取帳號喔！</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 登入成功 -->
+        <div class="modal fade" id="pok2">
+            <div class="modal-dialog modal-dialog-centered modal-sm">
+                <div class="modal-content">
+                    <div class="modal-body bgc1 p-4 text-center">
+                        <img src="image/ok.png" class="w-100 ok">
+                        <div class="text c3 pt-5">登入成功</div>
+                        <div class="text c3">貼心小叮嚀：請勿將帳號密碼告訴他人，以免被盜取帳號喔！</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <div class="banner">
+                <div class="carousel slide" id="banner">
+                    <a class="carousel-control-prev" data-slide="prev" data-target="#banner" role="button">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="sr-only"></span>
+                    </a>
+                    <a class="carousel-control-next" data-slide="next" data-target="#banner" role="button">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="sr-only"></span>
+                    </a>
+
+                    <ol class="carousel-indicators mb-5 pb-5">
+                        <li data-target="#banner" data-slide-to="0" class="active"></li>
+                        <li data-target="#banner" data-slide-to="1"></li>
+                        <!-- <li data-target="#banner" data-slide-to="2"></li> -->
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item bg b1 active"></div>
+                        <div class="carousel-item bg b2"></div>
+                        <!-- <div class="carousel-item bg b3"></div> -->
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- 專區 -->
+            <section class="Special container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-12 p-0 m-0">
+                        <a href="">
+                            <div class="card card1 bgc1">
+                                <img src="/image/buy/m1.png" class="position-absolute w-100">
+                                <div class="black"></div>
+                                <div class="font p-3 fadeInDown wow">
+                                    <div class="title h1 c2">
+                                        光棍專區
+                                    </div>
+                                    <p class="c3">
+                                        我可以單身。<br>
+                                        但我CP一定要結婚。 
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-12 p-0 m-0">
+                        <a href="">
+                            <div class="card card2 bgc1">
+                                <img src="/image/buy/m2.jpg" class="position-absolute w-100">
+                                <div class="black"></div>
+                                <div class="font p-3 fadeInDown wow">
+                                    <div class="title h1 c3">
+                                        本季熱播
+                                    </div>
+                                    <p class="c3">
+                                        本季熱門動漫。
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-12 p-0 m-0">
+                        <a href="">
+                            <div class="card card1 bgc1">
+                                <img src="/image/buy/m3.jpg" class="position-absolute w-100">
+                                <div class="black"></div>
+                                <div class="font p-3 fadeInDown wow">
+                                    <div class="title h1 c3">
+                                        經典重現
+                                    </div>
+                                    <p class="c3">
+                                        經典動漫永不過時。 
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-12 p-0 m-0">
+                        <a href="">
+                            <div class="card card2 bgc1">
+                                <img src="/image/buy/m4.png" class="position-absolute w-100">
+                                <div class="black"></div>
+                                <div class="font p-3 fadeInDown wow">
+                                    <div class="title h1 c2">
+                                        宅宅互助區
+                                    </div>
+                                    <p class="c3">
+                                        宅宅變現充穿搭法。
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <div class="text-center p-4 bgc1">
+        </div>
+        <footer class="bgc1 w-100 p-3 text-light text-center">
+            In2023 本網站符合RWD設計
+        </footer>
+
+        <div class="other">
+            <a href="#top"><img src="image/top.png" class="pic"></a>
+        </div>
+
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/all.js"></script>
+    </body>
+    </html>
+

@@ -1,0 +1,35 @@
+/* banner */
+.banner .b1{
+    background-image: url(../image/banner/01.jpg);
+}
+.banner .b2{
+    background-image: url(../image/banner/02.jpg);
+}
+.banner .b3{
+    background-image: url(../image/banner/);
+}
+
+.card{
+    border-radius: 0%;
+    height: 40rem;
+    position: relative;
+}
+
+
+.card img{
+    transition: 0.3s;
+}
+.card:hover img{
+    transform: scale(1.1);
+}
+
+.card1 .font{
+    bottom: 0;
+    left: 5%;
+    position: absolute;
+}
+.card2 .font{
+    top: 0;
+    right: 5%;
+    position: absolute;
+}

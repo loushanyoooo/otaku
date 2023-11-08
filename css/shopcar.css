@@ -1,0 +1,45 @@
+
+.item_header{
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    border-bottom:solid #888 1px;
+}
+.item_header div{
+    color: #888;
+}
+.item_body{
+    margin-top: 20px;
+    align-items: center;    
+}
+.item_detail{
+    display:flex;
+    align-items:center;
+}
+.item_detail img{
+    width: 10rem;
+    float: left;
+    display: block;
+}
+.item_detail .text{
+    display: block;
+}
+.form-check-input{
+    border: #ff0;
+    background-color: rgba(0, 0, 0, 0);
+    display: block;
+}
+
+.delete{
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+.delete:hover{
+    text-decoration: underline;
+}
+
+.buy-btn{
+    background-color: #ff0;
+    width: 5rem;
+    height: 3rem;
+}

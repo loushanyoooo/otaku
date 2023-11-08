@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宅宅T-專區</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/special.css">
+</head>
+<body class="bgc1">
+    <nav class="navbar navbarB navbar-expand-lg navbar-scroll">
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#menu" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse justify-content-center" id="menu">
+            <a href="index.html" class="logo">宅</a>
+            <div class="navbar-nav underline">
+                <div class="nav-item">
+                    <a href="special.html" class="nav-link c2 yellow">專區</a>
+                </div>
+                <div class="nav-item">
+                    <a href="special.html" class="nav-link">上衣</a>
+                </div>
+                <div class="nav-item">
+                    <a href="special.html" class="nav-link">下身</a>
+                </div>
+                <div class="nav-item">
+                    <a href="special.html" class="nav-link">鞋襪</a>
+                </div>
+                <div class="nav-item">
+                    <a href="special.html" class="nav-link">配件</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#Accessories" class="nav-link">客戶服務</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#Accessories" class="nav-link">搜尋</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#people">登入</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/shopcar.html" class="nav-link c2 yellow">購物車</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 會員 -->
+    <div class="modal fade" id="people">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bgc1">
+                <div class="modal-body p-4">
+                    <button class="close" data-dismiss="modal" aria-label="close">&times;</button>
+
+                    <ol class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a href="#p1" class="nav-link c2 active" aria-selected="true" data-toggle="pill">註冊</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#p2" class="nav-link c2" aria-selected="false" data-toggle="pill">登入</a>
+                        </li>
+                    </ol>
+
+                    
+                    <div class="tab-content bgc1 p-3 text-light">
+                        <div class="tab-pane fade active show" id="p1">
+                            <div class="title h3 p-3 c2">會員註冊</div>
+                            <div class="text p-2">不需繳任何會費，完全免費</div>
+
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="">姓名：</label>
+                                    <input type="text" class="form-group">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">連絡電話：</label>
+                                    <input type="text" class="form-group">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">電子信箱：</label>
+                                    <input type="text" class="form-group">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">密碼：</label>
+                                    <input type="text" class="form-group">
+                                </div>
+
+                                <div class="text-center">
+                                    <button class="btn btn-outline-warning" data-target="#pok1" data-toggle="modal" data-dismiss="modal">確認註冊</button>
+                                    <button class="btn btn-outline-secondary" type="reset">重新填寫</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="p2">
+                            <div class="title h3 p-3 c2">會員登入</div>
+
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="">電子信箱：</label>
+                                    <input type="text" class="form-group">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">密碼：</label>
+                                    <input type="text" class="form-group">
+                                </div>
+                                <div class="form-group">
+                                    <input type="checkbox" class="m-1">
+                                    <label for="">確認密碼</label>
+                                </div>
+
+                                <div class="text-center">
+                                    <button class="btn btn-outline-warning" data-target="#pok2" data-toggle="modal" data-dismiss="modal">確認登入</button>
+                                    <button class="btn btn-outline-secondary" type="reset">重新填寫</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 註冊成功 -->
+    <div class="modal fade" id="pok1">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-body bgc1 p-4 text-center">
+                    <img src="image/ok.png" class="w-100 ok">
+                    <div class="text c3 pt-5">註冊成功</div>
+                    <div class="text c3">貼心小叮嚀：請勿將帳號密碼告訴他人，以免被盜取帳號喔！</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 登入成功 -->
+    <div class="modal fade" id="pok2">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-body bgc1 p-4 text-center">
+                    <img src="image/ok.png" class="w-100 ok">
+                    <div class="text c3 pt-5">登入成功</div>
+                    <div class="text c3">貼心小叮嚀：請勿將帳號密碼告訴他人，以免被盜取帳號喔！</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="header">
+        <h1 class="title c4 shadow-sm">
+            <span class="c2">專區。</span><br>
+            依照您的需求訂購產品。 
+        </h1>
+    </section>
+
+    
+    <!-- 分類 -->
+    <section class="type container">
+        <ul class="row nav" id="pills-tab" role="tablist">
+            <div class="col-2"></div>
+            <li class="col-2 nav-item" role="presentation">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" data-target="#Jacket" role="tab" aria-selected="true">
+                    <div class="card bgc1">
+                        <img src="image/type/Jacket.png" class="w-100">
+                        <div class="text p-4 c3 text-center">
+                            上衣
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="col-2 nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-toggle="pill" data-target="#lower" role="tab" aria-selected="false">
+                    <div class="card bgc1">
+                        <img src="image/type/lower body.png" class="w-100">
+                        <div class="text p-4 c3 text-center">
+                            下身
+                        </div>
+                    </div>
+                </button>
+            </li>
+            <li class="col-2 nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#sock" role="tab" aria-selected="false">
+                    <div class="card bgc1">
+                        <img src="image/type/sock.png" class="w-100">
+                        <div class="text p-4 c3 text-center">
+                            鞋襪
+                        </div>
+                    </div>
+                </button>
+            </li>
+            <li class="col-2 nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-toggle="pill" data-target="#Accessories" role="tab" aria-selected="false">
+                    <div class="card bgc1">
+                        <img src="image/type/Accessories.png" class="w-100">
+                        <div class="text p-4 c3 text-center">
+                            配件
+                        </div>
+                    </div>
+                </button>
+            </li>
+            <div class="col-2"></div>
+        </ul>
+    </section>
+
+    <div class="tab-content" id="pills-tab">
+        <div class="tab-pane fade show active" id="Jacket" role="tabpanel">
+            <!-- 光棍專區 -->
+            <section class="bachelor special container-fluid py">
+            <div class="title c4 pb-5">
+                <span class="c2 p-2">光棍專區。</span>11/11單身狂歡。
+            </div>
+    
+            <div class="row">
+                <div class="col-md-4 col-4 p-0 m-0">
+                    <a href="">
+                        <div class="card card1 bgc1">
+                            <img src="/image/01.png" class="w-100">
+                            <div class="black"></div>
+                            <div class="font p-3 fadeInDown wow">
+                                <div class="title h1 c2">
+                                    歐嗨喲，學妹。
+                                </div>
+                                <p class="text c3">
+                                    不敢打跟學妹招呼？衣服給你自信。
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-4 p-0 m-0">
+                    <a href="">
+                        <div class="card card1 bgc1">
+                            <img src="/image/02.png" class="w-100">
+                            <div class="black"></div>
+                            <div class="font p-3 fadeInDown wow">
+                                <div class="title h1 c2">
+                                    原神，啟動。
+                                </div>
+                                <p class="text c3">
+                                    沒有男/女朋友，你還有遊戲。
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-4 p-0 m-0">
+                    <a href="">
+                        <div class="card card1 bgc1">
+                            <img src="/image/03.png" class="w-100">
+                            <div class="black"></div>
+                            <div class="font p-3 fadeInDown wow">
+                                <div class="title h1 c2">
+                                    間諜8+9。
+                                </div>
+                                <p class="text c3">
+                                    沒有家庭，但你可以看別人。
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            </section>
+            <!-- 本季熱播 -->
+            <section class="HOT special container-fluid py">
+            <div class="title c4 pb-5">
+                <span class="c2 p-2">本季熱播。</span>專屬宅宅的潮流新品。
+            </div>
+    
+            <div class="row">
+                <div class="col-md-4 col-4 p-0 m-0">
+                    <a href="">
+                        <div class="card card1 bgc4">
+                            <img src="/image/21.jpg" class="w-100">
+                            <div class="black"></div>
+                            <div class="font p-3 fadeInDown wow">
+                                <div class="title h1 c2">
+                                    進擊的巨人。
+                                </div>
+                                <p class="text c3">
+                                    買件衣服慶祝完結。
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-4 p-0 m-0">
+                    <a href="">
+                        <div class="card card1 bgc4">
+                            <img src="/image/22.png" class="w-100">
+                            <div class="black"></div>
+                            <div class="font p-3 fadeInDown wow">
+                                <div class="title h1 c2">
+                                    咒術迴戰。
+                                </div>
+                                <p class="text c3">
+                                    良好品質，不用擔心收到2.5條悟。
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-4 p-0 m-0">
+                    <a href="">
+                        <div class="card card1 bgc4">
+                            <img src="/image/23.png" class="w-100">
+                            <div class="black"></div>
+                            <div class="font p-3 fadeInDown wow">
+                                <div class="title h1 c2">
+                                    鬼滅之刃。
+                                </div>
+                                <p class="text c3">
+                                    衣之呼吸。
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            </section>
+    
+            <!-- 經典重現 -->
+            <section class="classic special container-fluid py">
+            <div class="title c4 pb-5">
+                <span class="c2 p-2">經典重現。</span>老番再現，經典永不過時。
+            </div>
+    
+            <div class="row">
+                <div class="col-md-4 col-4 p-0 m-0">
+                    <a href="">
+                        <div class="card card1 bgc1">
+                            <img src="/image/31.png" class="w-100">
+                            <div class="black"></div>
+                            <div class="font p-3 fadeInDown wow">
+                                <div class="title h1 c2">
+                                    EVA。
+                                </div>
+                                <p class="text c3">
+                                    看不懂？快買件衣服裝懂。
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-4 p-0 m-0">
+                    <a href="">
+                        <div class="card card1 bgc1">
+                            <img src="/image/32.png" class="w-100">
+                            <div class="black"></div>
+                            <div class="font p-3 fadeInDown wow">
+                                <div class="title h1 c2">
+                                    鋼之煉金術師。
+                                </div>
+                                <p class="text c3">
+                                    大...哥...哥...，買..T..恤..。
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-4 p-0 m-0">
+                    <a href="">
+                        <div class="card card1 bgc1">
+                            <img src="/image/33.png" class="w-100">
+                            <div class="black"></div>
+                            <div class="font p-3 fadeInDown wow">
+                                <div class="title h1 c2">
+                                    火影忍者。
+                                </div>
+                                <p class="text c3">
+                                    大買特買之術。
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            </section>
+    
+            <!-- 宅宅互助區 -->
+            <section class="aid special container-fluid py">
+            <div class="title c4 pb-5">
+                <span class="c2 p-2">宅宅互助區。</span>動漫人物教你怎麼穿。
+            </div>
+    
+            <div class="row">
+                <div class="col-md-4 col-4 p-0 m-0">
+                    <a href="">
+                        <div class="card card1 bgc4">
+                            <img src="/image/41.png" class="w-100">
+                            <div class="black"></div>
+                            <div class="font p-3 fadeInDown wow">
+                                <p class="text c3">
+                                    穿出五條悟大長腿。
+                                </p>
+                                <div class="title h1 c2">
+                                    被五五分，但不會是五五身。
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-4 p-0 m-0">
+                    <a href="">
+                        <div class="card card1 bgc4">
+                            <img src="/image/42.png" class="w-100">
+                            <div class="black"></div>
+                            <div class="font p-3 fadeInDown wow">
+                                <p class="text c3">
+                                    西裝斯文敗類們。
+                                </p>
+                                <div class="title h1 c2">
+                                    優雅又不失設計感。
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-4 p-0 m-0">
+                    <a href="">
+                        <div class="card card1 bgc4">
+                            <img src="/image/43.png" class="w-100">
+                            <div class="black"></div>
+                            <div class="font p-3 fadeInDown wow">
+                                <p class="text c3">
+                                    龐克穿搭。
+                                </p>
+                                <div class="title h1 c2">
+                                    NaNa輕暗黑風格。
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            </section>
+        </div>
+        <div class="tab-pane fade" id="lower" role="tabpanel">
+            <div class="title c2 p-5">
+                敬請期待...
+            </div>
+        </div>
+        <div class="tab-pane fade" id="sock" role="tabpanel">
+            <div class="title c2 p-5">
+                敬請期待...
+            </div>
+        </div>
+        <div class="tab-pane fade" id="Accessories" role="tabpanel">
+            <div class="title c2 p-5">
+                敬請期待...
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="other">
+        <a href="#top"><img src="image/top.png" class="pic"></a>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/all.js"></script>
+</body>
+</html>

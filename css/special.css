@@ -1,0 +1,71 @@
+
+.title{
+    font-size: large;
+}
+.title span{
+    font-size: xx-large;
+}
+
+.type .card{
+    transition: 0.3s;
+}
+.type .card:hover{
+    transform: scale(1.1);
+}
+
+.text{
+    font-size: larger;
+}
+
+.carousel-control-prev{
+    display: none;
+}
+
+
+
+.special .card{
+    position: relative;
+    border-radius: 0%;
+    border: 0;
+}
+.special .card img{
+    transition: 0.3s;
+}
+.special .card:hover img{
+    transform: scale(1.1);
+}
+.special .title{
+    font-size: xx-large;
+}
+.special .card .font{
+    bottom: 0;
+    left: 5%;
+    position: absolute;
+}
+
+.special .card:hover .black{
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.type .card{
+    padding: .2rem;
+}
+.type .nav-link{
+    background-color: rgba(0, 0, 0, .0);
+    border: 0;
+}
+.type .nav-item:hover{
+    background-color: rgba(0, 0, 0, .0);
+}
+.type .nav .active .card{
+    background-color: #ff0;
+}
+.type .nav .active .card .text{
+    color: #161616;
+}
+.type .nav{
+    transition: 0.3s;
+}
