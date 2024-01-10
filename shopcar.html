@@ -10,35 +10,21 @@
     <link rel="stylesheet" href="css/shopcar.css">
 </head>
 <body class="bgc1">
-    <nav class="navbar navbarB navbar-expand-lg navbar-scroll">
+    <nav class="navbar navbarB navbar-expand-lg navbar-scroll ">
+        <a href="index.html" class="logo">宅</a>
 
         <button class="navbar-toggler" data-toggle="collapse" data-target="#menu" type="button">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon  text-light"></span>
         </button>
 
         <div class="navbar-collapse collapse justify-content-center" id="menu">
-            <a href="index.html" class="logo">宅</a>
+            
             <div class="navbar-nav underline">
                 <div class="nav-item">
                     <a href="special.html" class="nav-link">專區</a>
                 </div>
                 <div class="nav-item">
-                    <a href="special.html" class="nav-link">上身</a>
-                </div>
-                <div class="nav-item">
-                    <a href="special.htmlr" class="nav-link">下身</a>
-                </div>
-                <div class="nav-item">
-                    <a href="special.html" class="nav-link">鞋襪</a>
-                </div>
-                <div class="nav-item">
-                    <a href="special.html" class="nav-link">配件</a>
-                </div>
-                <div class="nav-item">
-                    <a href="#Accessories" class="nav-link">客戶服務</a>
-                </div>
-                <div class="nav-item">
-                    <a href="#Accessories" class="nav-link">搜尋</a>
+                    <a class="nav-link" data-toggle="modal" data-target="#QA">客戶服務</a>
                 </div>
                 <div class="nav-item">
                     <a class="nav-link" data-toggle="modal" data-target="#people">登入</a>
@@ -46,97 +32,97 @@
                 <div class="nav-item">
                     <a href="shopcar.html" class="nav-link c2 yellow">購物車</a>
                 </div>
+                <form class="form-inline">
+                    <input class="search form-control ml-3 mr-sm-2" type="search" placeholder="想找什麼動漫呢？" aria-label="Search">
+                    <button class="btn-outline-warning btn my-2 my-sm-0" type="submit">搜尋</button>
+                  </form>
             </div>
         </div>
     </nav>
+    
     <!-- 會員 -->
-    <div class="modal fade" id="people">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content bgc1">
-                <div class="modal-body p-4">
-                    <button class="close" data-dismiss="modal" aria-label="close">&times;</button>
+    <div class="modal fade people" id="people">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bgc1">
+                    <div class="modal-body">
+                        <button class="close" data-dismiss="modal" aria-label="close">&times;</button>
 
-                    <ol class="nav nav-tabs">
-                        <li class="nav-item">
-                            <a href="#p1" class="nav-link c2 active" aria-selected="true" data-toggle="pill">註冊</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#p2" class="nav-link c2" aria-selected="false" data-toggle="pill">登入</a>
-                        </li>
-                    </ol>
+                        <ol class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a href="#p1" class="nav-link c2 active" aria-selected="true" data-toggle="pill">登入</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#p2" class="nav-link c2" aria-selected="false" data-toggle="pill">註冊</a>
+                            </li>
+                        </ol>
 
                     
-                    <div class="tab-content bgc1 p-3 text-light">
-                        <div class="tab-pane fade active show" id="p1">
-                            <div class="title h3 p-3 c2">會員註冊</div>
-                            <div class="text p-2">不需繳任何會費，完全免費</div>
+                        <div class="tab-content bgc1 p-3 text-light">
+                            <div class="tab-pane fade" id="p2">
+                            <div class="title h3 p-3 c2">
+                                註冊。<span class="text c4">成為宅宅的一員</span>
+                            </div>
 
-                            <form action="">
-                                <div class="form-group">
-                                    <label for="">姓名：</label>
-                                    <input type="text" class="form-group">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">連絡電話：</label>
-                                    <input type="text" class="form-group">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">電子信箱：</label>
-                                    <input type="text" class="form-group">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">密碼：</label>
-                                    <input type="text" class="form-group">
-                                </div>
+                            <form class="text-left">
+                                <p>姓名</p>
+                                <input type="text" class="form-group w-100">
+                                
+                                <p>連絡電話</p>
+                                <input type="tel" class="form-group w-100">
+                                
+                                <p>電子信箱</p>
+                                <input type="email" class="form-group w-100">
 
-                                <div class="text-center">
+                                <p>密碼</p>
+                                <input type="password" class="form-group w-100" placeholder="包含英文大小寫及數字">
+
+                                <p>確認密碼</p>
+                                <input type="password" class="form-group w-100" placeholder="請再輸入一次密碼">
+                                
+                                <div class="text-center mt-5">
                                     <button class="btn btn-outline-warning" data-target="#pok1" data-toggle="modal" data-dismiss="modal">確認註冊</button>
                                     <button class="btn btn-outline-secondary" type="reset">重新填寫</button>
                                 </div>
                             </form>
-                        </div>
-                        <div class="tab-pane fade" id="p2">
-                            <div class="title h3 p-3 c2">會員登入</div>
+                            </div>
+                            <div class="tab-pane fade active show" id="p1">
+                            <div class="title h3 p-3 c2">
+                                登入。<span class="text c4">歡迎回來</span>
+                            </div>
 
-                            <form action="">
-                                <div class="form-group">
-                                    <label for="">電子信箱：</label>
-                                    <input type="text" class="form-group">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">密碼：</label>
-                                    <input type="text" class="form-group">
-                                </div>
-                                <div class="form-group">
-                                    <input type="checkbox" class="m-1">
-                                    <label for="">確認密碼</label>
-                                </div>
+                            <form class="c3">
+                                    <p>電子信箱</p>
+                                    <input type="email" class="form-group w-100">
 
-                                <div class="text-center">
+                                    <p>密碼</p>
+                                    <input type="password" class="form-group w-100" placeholder="包含英文大小寫及數字">
+                                    <a data-target="#forgot" data-toggle="modal" data-dismiss="modal" class="c4 p-2">忘記密碼</a>
+                                    
+                                    <div class="text-center mt-5">
                                     <button class="btn btn-outline-warning" data-target="#pok2" data-toggle="modal" data-dismiss="modal">確認登入</button>
                                     <button class="btn btn-outline-secondary" type="reset">重新填寫</button>
-                                </div>
+                                    </div>
                             </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </div>
     <!-- 註冊成功 -->
-    <div class="modal fade" id="pok1">
+    <div class="modal fade people" id="pok1">
         <div class="modal-dialog modal-dialog-centered modal-sm">
             <div class="modal-content">
                 <div class="modal-body bgc1 p-4 text-center">
                     <img src="image/ok.png" class="w-100 ok">
-                    <div class="text c3 pt-5">註冊成功</div>
-                    <div class="text c3">貼心小叮嚀：請勿將帳號密碼告訴他人，以免被盜取帳號喔！</div>
+                    <div class="text c3 pt-5">註冊成功 請再次登入</div>
+                    <div class="text c4">貼心小叮嚀：請勿將帳號密碼告訴他人，以免被盜取帳號喔！</div>
                 </div>
             </div>
         </div>
     </div>
     <!-- 登入成功 -->
-    <div class="modal fade" id="pok2">
+    <div class="modal fade people" id="pok2">
         <div class="modal-dialog modal-dialog-centered modal-sm">
             <div class="modal-content">
                 <div class="modal-body bgc1 p-4 text-center">
@@ -148,6 +134,72 @@
         </div>
     </div>
 
+    <!-- 忘記密碼 -->
+    <div class="modal fade people" id="forgot">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bgc1">
+                    <div class="modal-header">
+                        <button class="close c3" data-dismiss="modal" aria-label="close">&times;</button>
+                    </div>
+                    <div class="modal-body p-4">
+                        <form class="text-left c3">
+                            <p>電子信箱</p>
+                            <input type="email" class="form-group w-100">
+                            
+                            <div class="text-center mt-5">
+                                <button class="btn btn-outline-warning" data-target="#forgotOK" data-toggle="modal" data-dismiss="modal">發送驗證碼</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- 忘記密碼 送出 -->
+    <div class="modal fade people" id="forgotOK">
+            <div class="modal-dialog modal-dialog-centered modal-sm">
+                <div class="modal-content">
+                    <div class="modal-body bgc1 p-4 text-center">
+                        <div class="text c3">以傳送電子郵件到您的信箱中</div>
+                        <div class="text c4">請至信箱中查看並重設密碼</div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- 客戶服務 -->
+    <div class="modal fade" id="QA">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content QA">
+            <div class="modal-body bgc1 p-4">
+                <button class="close c3" data-dismiss="modal" aria-label="close">&times;</button>
+                <div class="title h3 py-3 c2">請敘述您遇到的問題</div>
+                <input type="text" class="w-100 h-20">
+                <div class="text-right">
+                    <button class="btn btn-outline-warning mt-4 text-right" data-target="#QAK" data-toggle="modal" data-dismiss="modal">送出</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- 客戶服務 送出 -->
+    <div class="modal fade people QA" id="QAK">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body bgc1 p-4">
+                <button class="close c3" data-dismiss="modal" aria-label="close">&times;</button>
+                <div class="text text-center">
+                    <div class="title h3 py-3 c2">
+                        已收到您的建議！<br>
+                        會盡快聯絡及改進。
+                    </div>
+                    <a class="c4" data-target="#QA" data-toggle="modal" data-dismiss="modal">我還有其他疑問。</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
     <section class="header">
         <h1 class="title c2 shadow-sm">
             購物車。
@@ -157,15 +209,15 @@
     <div id="app">
         <div class="container">
             <div class="row c4">
-                <div class="col-1"><input class="form-check-input" type="checkbox"></div>
+                <div class="col-1"></div>
                 <div class="col-3">商品</div>
                 <div class="col-2">尺寸</div>
                 <div class="col-3">顏色</div>
                 <div class="col-3">價格</div>
             </div>
-            <div class="row c4 item_header item_body">
+            <div class="row c4 item_header item_body commodity">
                 <div class="col-4 item_detail">
-                    <input class="form-check-input" type="checkbox">
+                    <input class="form-check-input" type="checkbox" style="margin: .1rem;" name="c">
                     <img src="image/31.png">
                     <div class="text">EVA T恤</div>
                 </div>
@@ -173,12 +225,12 @@
                 <div class="col-3">初號機(黑)</div> 
                 <div class="col-2"><span class="c2">＄850</span></div>
                 <div class="col-1">
-                <button class="delete c2" @click="handledelete(index)">刪除</button>
+                <button class="delete c2" onclick="removediv()">刪除</button>
                 </div>
             </div>
-            <div class="row c4 item_header item_body">
+            <div class="row c4 item_header item_body commodity2">
                 <div class="col-4 item_detail">
-                    <input class="form-check-input" type="checkbox">
+                    <input class="form-check-input" type="checkbox" style="margin: .1rem;" name="c">
                     <img src="image/32.png">
                     <div class="text">鋼之煉金術師 T恤</div>
                 </div>
@@ -186,12 +238,12 @@
                 <div class="col-3">愛德華(黑)</div> 
                 <div class="col-2"><span class="c2">＄720</span></div>
                 <div class="col-1">
-                <button class="delete c2" @click="handledelete(index)">刪除</button>
+                <button class="delete c2" onclick="removediv2()">刪除</button>
                 </div>
             </div>
-            <div class="row c4 item_header item_body">
+            <div class="row c4 item_header item_body commodity3">
                 <div class="col-4 item_detail">
-                    <input class="form-check-input" type="checkbox">
+                    <input class="form-check-input" type="checkbox" style="margin: .1rem;" name="c">
                     <img src="image/23.png">
                     <div class="text">鬼滅之刃 T恤</div>
                 </div>
@@ -199,12 +251,12 @@
                 <div class="col-3">炭之郎(黑)</div> 
                 <div class="col-2"><span class="c2">＄590</span></div>
                 <div class="col-1">
-                <button class="delete c2" @click="handledelete(index)">刪除</button>
+                <button class="delete c2" onclick="removediv3()">刪除</button>
                 </div>
             </div>
-            <div class="row c4 item_header item_body">
+            <div class="row c4 item_header item_body commodity4">
                 <div class="col-4 item_detail">
-                    <input class="form-check-input" type="checkbox">
+                    <input class="form-check-input" type="checkbox" style="margin: .1rem;" name="c">
                     <img src="image/22.png">
                     <div class="text">咒術迴戰 T恤</div>
                 </div>
@@ -212,12 +264,12 @@
                 <div class="col-3">黑</div> 
                 <div class="col-2"><span class="c2">＄750</span></div>
                 <div class="col-1">
-                <button class="delete c2" @click="handledelete(index)">刪除</button>
+                <button class="delete c2" onclick="removediv4()">刪除</button>
                 </div>
             </div>
-            <div class="row c4 item_header item_body">
+            <div class="row c4 item_header item_body commodity5">
                 <div class="col-4 item_detail">
-                    <input class="form-check-input" type="checkbox">
+                    <input class="form-check-input" type="checkbox" style="margin: .1rem;" name="c">
                     <img src="image/33.png">
                     <div class="text">火影忍者 長袖</div>
                 </div>
@@ -225,24 +277,59 @@
                 <div class="col-3">漩渦鳴人(灰)</div> 
                 <div class="col-2"><span class="c2">＄570</span></div>
                 <div class="col-1">
-                <button class="delete c2" @click="handledelete(index)">刪除</button>
+                <button class="delete c2" onclick="removediv5()">刪除</button>
                 </div>
             </div>
 
             <div class="d-flex align-center justify-content-between p-5">
                 <div class="c4">
-                    <input class="form-check-input" type="checkbox">
+                    <input type="checkbox" name="all" onclick="check_all(this,'c')" />
                     全選(5)
                 </div>
                 <div class="text-center">
-                    <button class="btn buy-btn">購買</button>
+                    <button class="btn btn-outline-warning" data-target="#mok" data-toggle="modal" data-dismiss="modal">購買</button>
                 </div>
             </div>
             </form> 
         </div>
     </div>
-    
 
+    <!-- 下訂彈跳 -->
+    <div class="modal fade" id="mok">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content bgc1">
+                <div class="modal-body p-4 text-center">
+                    <img src="image/ok.png" class="w-100 ok">
+                    <div class="text-warning pt-5">訂購成功，商品將在3日後寄出</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">    
+        function check_all(obj,cName)
+    {
+        var checkboxs = document.getElementsByName(cName);
+        for(var i=0;i<checkboxs.length;i++){checkboxs[i].checked = obj.checked;}
+    }
+
+    function removediv(){
+        $(".commodity").remove();
+    }
+    function removediv2(){
+        $(".commodity2").remove();
+    }
+    function removediv3(){
+        $(".commodity3").remove();
+    }
+    function removediv4(){
+        $(".commodity4").remove();
+    }
+    function removediv5(){
+        $(".commodity5").remove();
+    }
+    </script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>

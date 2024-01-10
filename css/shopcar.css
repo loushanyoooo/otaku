@@ -1,4 +1,8 @@
-
+@media (min-width: 768px) {
+    .item_detail img{
+        width: 5rem;
+    }
+}
 .item_header{
     display: flex;
     padding: 20px 0;

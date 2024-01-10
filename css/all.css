@@ -15,7 +15,7 @@ html{
     padding: 10rem 0;
 }
 a{
-    text-decoration: none !important;
+    text-decoration: none;
 }
 .card{
     overflow: hidden;
@@ -61,7 +61,7 @@ a{
 
 /* bgc */
 .bgc1{
-    background-color: #161616;
+    background-color: #00000F;
 }
 .bgc2{
     background-color: #ff0;
@@ -126,9 +126,22 @@ a{
     padding-bottom: 10px;
     font-weight: bold;
     font-size: 30px; 
+    text-decoration: none !important;
+}
+
+.search{
+    background-color: #161616;
+    border:solid #ff0 1px;
 }
 
 /* modal */
+.modal .title{
+    font-size: 2rem;
+}
+.text-input{
+    background-color: rgba(0, 0, 0, .0);
+    border: solid #ff0 1px;
+}
 
 /* banner */
 .banner ,.banner .carousel-item{
@@ -184,7 +197,51 @@ a{
     z-index: 2;
 }
 
+.people input{
+    background-color: rgba(0, 0, 0, .0);
+    border: solid #ff0 0.1rem;
+}
+.people input:focus{
+    background-color: rgba(0, 0, 0, .0);
+    border: solid #ff0 0.2rem;
+}
 
+
+.QA .text{
+    padding: 3rem 1rem;
+    margin: 3rem;
+    background-color: #161616;
+    border: solid #7D7D7D 0.1rem;
+}
+.QA a:hover{
+    color: #7D7D7D;
+    text-decoration: underline;
+}
+.QA input{
+    background-color: #161616;
+    border: solid #7D7D7D 0.1rem;
+}
+.h-20{
+    height: 20rem;
+}
+
+.QA ::placeholder{
+    align-items:start;
+    font-size: .8rem;
+
+}
+
+
+input{
+    position: relative;
+    color: #fff;
+}
+::placeholder{
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+
+}
 
 
 
@@ -222,3 +279,4 @@ a{
     top: 5%;
     left: 25%;
 }
+

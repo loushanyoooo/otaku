@@ -10,35 +10,21 @@
     <link rel="stylesheet" href="css/special.css">
 </head>
 <body class="bgc1">
-    <nav class="navbar navbarB navbar-expand-lg navbar-scroll">
+    <nav class="navbar navbarB navbar-expand-lg navbar-scroll ">
+        <a href="index.html" class="logo">宅</a>
 
         <button class="navbar-toggler" data-toggle="collapse" data-target="#menu" type="button">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon  text-light"></span>
         </button>
 
         <div class="navbar-collapse collapse justify-content-center" id="menu">
-            <a href="index.html" class="logo">宅</a>
+            
             <div class="navbar-nav underline">
                 <div class="nav-item">
-                    <a href="special.html" class="nav-link c2 yellow">專區</a>
+                    <a href="special.html" class="nav-link">專區</a>
                 </div>
                 <div class="nav-item">
-                    <a href="special.html" class="nav-link">上衣</a>
-                </div>
-                <div class="nav-item">
-                    <a href="special.html" class="nav-link">下身</a>
-                </div>
-                <div class="nav-item">
-                    <a href="special.html" class="nav-link">鞋襪</a>
-                </div>
-                <div class="nav-item">
-                    <a href="special.html" class="nav-link">配件</a>
-                </div>
-                <div class="nav-item">
-                    <a href="#Accessories" class="nav-link">客戶服務</a>
-                </div>
-                <div class="nav-item">
-                    <a href="#Accessories" class="nav-link">搜尋</a>
+                    <a class="nav-link" data-toggle="modal" data-target="#QA">客戶服務</a>
                 </div>
                 <div class="nav-item">
                     <a class="nav-link" data-toggle="modal" data-target="#people">登入</a>
@@ -46,98 +32,98 @@
                 <div class="nav-item">
                     <a href="shopcar.html" class="nav-link c2 yellow">購物車</a>
                 </div>
+                <form class="form-inline">
+                    <input class="search form-control ml-3 mr-sm-2" type="search" placeholder="想找什麼動漫呢？" aria-label="Search">
+                    <button class="btn-outline-warning btn my-2 my-sm-0" type="submit">搜尋</button>
+                  </form>
             </div>
         </div>
     </nav>
 
+    
     <!-- 會員 -->
-    <div class="modal fade" id="people">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content bgc1">
-                <div class="modal-body p-4">
-                    <button class="close" data-dismiss="modal" aria-label="close">&times;</button>
+    <div class="modal fade people" id="people">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bgc1">
+                    <div class="modal-body">
+                        <button class="close" data-dismiss="modal" aria-label="close">&times;</button>
 
-                    <ol class="nav nav-tabs">
-                        <li class="nav-item">
-                            <a href="#p1" class="nav-link c2 active" aria-selected="true" data-toggle="pill">註冊</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#p2" class="nav-link c2" aria-selected="false" data-toggle="pill">登入</a>
-                        </li>
-                    </ol>
+                        <ol class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a href="#p1" class="nav-link c2 active" aria-selected="true" data-toggle="pill">登入</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#p2" class="nav-link c2" aria-selected="false" data-toggle="pill">註冊</a>
+                            </li>
+                        </ol>
 
                     
-                    <div class="tab-content bgc1 p-3 text-light">
-                        <div class="tab-pane fade active show" id="p1">
-                            <div class="title h3 p-3 c2">會員註冊</div>
-                            <div class="text p-2">不需繳任何會費，完全免費</div>
+                        <div class="tab-content bgc1 p-3 text-light">
+                            <div class="tab-pane fade" id="p2">
+                            <div class="title h3 p-3 c2">
+                                註冊。<span class="text c4">成為宅宅的一員</span>
+                            </div>
 
-                            <form action="">
-                                <div class="form-group">
-                                    <label for="">姓名：</label>
-                                    <input type="text" class="form-group">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">連絡電話：</label>
-                                    <input type="text" class="form-group">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">電子信箱：</label>
-                                    <input type="text" class="form-group">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">密碼：</label>
-                                    <input type="text" class="form-group">
-                                </div>
+                            <form class="text-left">
+                                <p>姓名</p>
+                                <input type="text" class="form-group w-100">
+                                
+                                <p>連絡電話</p>
+                                <input type="tel" class="form-group w-100">
+                                
+                                <p>電子信箱</p>
+                                <input type="email" class="form-group w-100">
 
-                                <div class="text-center">
+                                <p>密碼</p>
+                                <input type="password" class="form-group w-100" placeholder="包含英文大小寫及數字">
+
+                                <p>確認密碼</p>
+                                <input type="password" class="form-group w-100" placeholder="請再輸入一次密碼">
+                                
+                                <div class="text-center mt-5">
                                     <button class="btn btn-outline-warning" data-target="#pok1" data-toggle="modal" data-dismiss="modal">確認註冊</button>
                                     <button class="btn btn-outline-secondary" type="reset">重新填寫</button>
                                 </div>
                             </form>
-                        </div>
-                        <div class="tab-pane fade" id="p2">
-                            <div class="title h3 p-3 c2">會員登入</div>
+                            </div>
+                            <div class="tab-pane fade active show" id="p1">
+                            <div class="title h3 p-3 c2">
+                                登入。<span class="text c4">歡迎回來</span>
+                            </div>
 
-                            <form action="">
-                                <div class="form-group">
-                                    <label for="">電子信箱：</label>
-                                    <input type="text" class="form-group">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">密碼：</label>
-                                    <input type="text" class="form-group">
-                                </div>
-                                <div class="form-group">
-                                    <input type="checkbox" class="m-1">
-                                    <label for="">確認密碼</label>
-                                </div>
+                            <form class="c3">
+                                    <p>電子信箱</p>
+                                    <input type="email" class="form-group w-100">
 
-                                <div class="text-center">
+                                    <p>密碼</p>
+                                    <input type="password" class="form-group w-100" placeholder="包含英文大小寫及數字">
+                                    <a data-target="#forgot" data-toggle="modal" data-dismiss="modal" class="c4 p-2">忘記密碼</a>
+                                    
+                                    <div class="text-center mt-5">
                                     <button class="btn btn-outline-warning" data-target="#pok2" data-toggle="modal" data-dismiss="modal">確認登入</button>
                                     <button class="btn btn-outline-secondary" type="reset">重新填寫</button>
-                                </div>
+                                    </div>
                             </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </div>
     <!-- 註冊成功 -->
-    <div class="modal fade" id="pok1">
+    <div class="modal fade people" id="pok1">
         <div class="modal-dialog modal-dialog-centered modal-sm">
             <div class="modal-content">
                 <div class="modal-body bgc1 p-4 text-center">
                     <img src="image/ok.png" class="w-100 ok">
-                    <div class="text c3 pt-5">註冊成功</div>
-                    <div class="text c3">貼心小叮嚀：請勿將帳號密碼告訴他人，以免被盜取帳號喔！</div>
+                    <div class="text c3 pt-5">註冊成功 請再次登入</div>
+                    <div class="text c4">貼心小叮嚀：請勿將帳號密碼告訴他人，以免被盜取帳號喔！</div>
                 </div>
             </div>
         </div>
     </div>
     <!-- 登入成功 -->
-    <div class="modal fade" id="pok2">
+    <div class="modal fade people" id="pok2">
         <div class="modal-dialog modal-dialog-centered modal-sm">
             <div class="modal-content">
                 <div class="modal-body bgc1 p-4 text-center">
@@ -148,6 +134,72 @@
             </div>
         </div>
     </div>
+
+    <!-- 忘記密碼 -->
+    <div class="modal fade people" id="forgot">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bgc1">
+                    <div class="modal-header">
+                        <button class="close c3" data-dismiss="modal" aria-label="close">&times;</button>
+                    </div>
+                    <div class="modal-body p-4">
+                        <form class="text-left c3">
+                            <p>電子信箱</p>
+                            <input type="email" class="form-group w-100">
+                            
+                            <div class="text-center mt-5">
+                                <button class="btn btn-outline-warning" data-target="#forgotOK" data-toggle="modal" data-dismiss="modal">發送驗證碼</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- 忘記密碼 送出 -->
+    <div class="modal fade people" id="forgotOK">
+            <div class="modal-dialog modal-dialog-centered modal-sm">
+                <div class="modal-content">
+                    <div class="modal-body bgc1 p-4 text-center">
+                        <div class="text c3">以傳送電子郵件到您的信箱中</div>
+                        <div class="text c4">請至信箱中查看並重設密碼</div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- 客戶服務 -->
+    <div class="modal fade" id="QA">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content QA">
+            <div class="modal-body bgc1 p-4">
+                <button class="close c3" data-dismiss="modal" aria-label="close">&times;</button>
+                <div class="title h3 py-3 c2">請敘述您遇到的問題</div>
+                <input type="text" class="w-100 h-20">
+                <div class="text-right">
+                    <button class="btn btn-outline-warning mt-4 text-right" data-target="#QAK" data-toggle="modal" data-dismiss="modal">送出</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- 客戶服務 送出 -->
+    <div class="modal fade people QA" id="QAK">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body bgc1 p-4">
+                <button class="close c3" data-dismiss="modal" aria-label="close">&times;</button>
+                <div class="text text-center">
+                    <div class="title h3 py-3 c2">
+                        已收到您的建議！<br>
+                        會盡快聯絡及改進。
+                    </div>
+                    <a class="c4" data-target="#QA" data-toggle="modal" data-dismiss="modal">我還有其他疑問。</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
 
     <section class="header">
         <h1 class="title c4 shadow-sm">
@@ -215,7 +267,7 @@
     
             <div class="row">
                 <div class="col-md-4 col-6 p-0 m-0">
-                    <a href="">
+                    <a href="#" data-target="#m1" data-toggle="modal">
                         <div class="card card1 bgc1">
                             <img src="image/01.png" class="w-100">
                             <div class="black"></div>
@@ -226,12 +278,13 @@
                                 <p class="text c3">
                                     不敢打跟學妹招呼？衣服給你自信。
                                 </p>
+                                <span class="c3 text">400$</span>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 col-6 p-0 m-0">
-                    <a href="">
+                    <a href="#" data-target="#m2" data-toggle="modal">
                         <div class="card card1 bgc1">
                             <img src="image/02.png" class="w-100">
                             <div class="black"></div>
@@ -242,12 +295,13 @@
                                 <p class="text c3">
                                     沒有男/女朋友，你還有遊戲。
                                 </p>
+                                <span class="c3 text">360$</span>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 col-6 p-0 m-0">
-                    <a href="">
+                    <a href="#" data-target="#m3" data-toggle="modal">
                         <div class="card card1 bgc1">
                             <img src="image/03.png" class="w-100">
                             <div class="black"></div>
@@ -258,12 +312,162 @@
                                 <p class="text c3">
                                     沒有家庭，但你可以看別人。
                                 </p>
+                                <span class="c3 text">450$</span>
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
             </section>
+
+            <!-- 購買彈跳 -->
+            <!-- 歐嗨喲，學妹。 -->
+            <div class="modal fade" id="m1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bgc1">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal" aria-label="close">&times;</button>
+                        </div>
+                        <div class="modal-body p-4">
+                            <img src="image/01.png" class="w-100">
+                            
+                            <div class="title c2 py-4 border-bottom border-warning">
+                                歐嗨喲，學妹。
+                            </div>
+
+                            <div class="btn-group btn-group-toggle mt-4" data-toggle="buttons">
+                                <label class="btn btn-outline-warning active">
+                                  <input type="radio" name="options" id="option1" autocomplete="off" checked> 男版
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                  <input type="radio" name="options" id="option2" autocomplete="off"> 女版
+                                </label>
+                              </div>
+                            
+                            <form class="mt-2">
+                                <div class="form-group ticket" data-pay="400" data-money="400">
+                                    <label class="mt-4 c3">訂購數量：<input type="number" class="form-control many" value="1" min="1"></label>
+                                    <h3 class="mt-4 c3">
+                                        總價：
+                                        <span class="text-warning">NT</span>
+                                        <span class="text-warning" id="total">400</span>
+                                    </h3>
+                                </div>
+                                
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-outline-warning" data-target="#mok" data-toggle="modal" data-dismiss="modal">確認訂購</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- 原神，啟動。 -->
+            <div class="modal fade" id="m2">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bgc1">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal" aria-label="close">&times;</button>
+                        </div>
+                        <div class="modal-body p-4">
+                            <img src="image/02.png" class="w-100">
+                            
+                            <div class="title c2 py-4 border-bottom border-warning">
+                                原神，啟動。
+                            </div>
+
+                            <p class="c4 pt-3">
+                                S 150-160/M 160-170/L 171-175/XL 175-180/XXL 181-185<br>
+                                S 40-52/M 50-60/L 65-74/XL 75-85/XXL 90-100/XXXL 100up
+                            </p>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-warning active">
+                                  <input type="radio" name="options" id="option1" autocomplete="off" checked> S
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                  <input type="radio" name="options" id="option2" autocomplete="off"> M
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> L
+                                  </label>
+                                  <label class="btn btn-outline-warning">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> XL
+                                  </label>
+                                  <label class="btn btn-outline-warning">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> XXL
+                                  </label>
+                                  <label class="btn btn-outline-warning">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> XXXL
+                                  </label>
+                              </div>
+                            
+                            <form class="mt-2">
+                                <div class="form-group ticket" data-pay="360" data-money="360">
+                                    <label class="mt-4 c3">訂購數量：<input type="number" class="form-control many" value="1" min="1"></label>
+                                    <h3 class="mt-4 c3">
+                                        總價：
+                                        <span class="text-warning">NT</span>
+                                        <span class="text-warning" id="total">360</span>
+                                    </h3>
+                                </div>
+                                
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-outline-warning" data-target="#mok" data-toggle="modal" data-dismiss="modal">確認訂購</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- 間諜8+9。 -->
+            <div class="modal fade" id="m3">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bgc1">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal" aria-label="close">&times;</button>
+                        </div>
+                        <div class="modal-body p-4">
+                            <img src="image/03.png" class="w-100">
+                            
+                            <div class="title c2 py-4 border-bottom border-warning">
+                                間諜8+9。
+                            </div>
+                            <p class="c4 pt-3">均碼</p>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-warning active">
+                                  <input type="radio" name="options" id="option1" autocomplete="off" checked> 黑色
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                  <input type="radio" name="options" id="option2" autocomplete="off"> 白色
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> 灰色
+                                  </label>
+                                  <label class="btn btn-outline-warning">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> 黃色
+                                  </label>
+                              </div>
+                            
+                            <form class="mt-2">
+                                <div class="form-group ticket" data-pay="450" data-money="450">
+                                    <label class="mt-4 c3">訂購數量：<input type="number" class="form-control many" value="1" min="1"></label>
+                                    <h3 class="mt-4 c3">
+                                        總價：
+                                        <span class="text-warning">NT</span>
+                                        <span class="text-warning" id="total">450</span>
+                                    </h3>
+                                </div>
+                                
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-outline-warning" data-target="#mok" data-toggle="modal" data-dismiss="modal">確認訂購</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+
             <!-- 本季熱播 -->
             <section class="HOT special container-fluid py">
             <div class="title c4 pb-5">
@@ -272,7 +476,7 @@
     
             <div class="row">
                 <div class="col-md-4 col-6 p-0 m-0">
-                    <a href="">
+                    <a href="#" data-target="#m2-1" data-toggle="modal">
                         <div class="card card1 bgc4">
                             <img src="image/21.jpg" class="w-100">
                             <div class="black"></div>
@@ -283,12 +487,13 @@
                                 <p class="text c3">
                                     買件衣服慶祝完結。
                                 </p>
+                                <span class="c3">350$</span>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 col-6 p-0 m-0">
-                    <a href="">
+                    <a href="#" data-target="#m2-2" data-toggle="modal">
                         <div class="card card1 bgc4">
                             <img src="image/22.png" class="w-100">
                             <div class="black"></div>
@@ -299,12 +504,13 @@
                                 <p class="text c3">
                                     良好品質，不用擔心收到2.5條悟。
                                 </p>
+                                <span class="c3">590$</span>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 col-6 p-0 m-0">
-                    <a href="">
+                    <a href="#" data-target="#m2-3" data-toggle="modal">
                         <div class="card card1 bgc4">
                             <img src="image/23.png" class="w-100">
                             <div class="black"></div>
@@ -315,12 +521,170 @@
                                 <p class="text c3">
                                     衣之呼吸。
                                 </p>
+                                <span class="c3">600$</span>
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
             </section>
+
+            <!-- 購買彈跳 -->
+            <!-- 進擊的巨人。 -->
+            <div class="modal fade" id="m2-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bgc1">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal" aria-label="close">&times;</button>
+                        </div>
+                        <div class="modal-body p-4">
+                            <img src="image/21.jpg" class="w-100">
+                            
+                            <div class="title c2 py-4 border-bottom border-warning">
+                                進擊的巨人。
+                            </div>
+
+                            <p class="c4 pt-3">
+                                S 150-160/M 160-170/L 171-175/XL 175-180/XXL 181-185<br>
+                                S 40-52/M 50-60/L 65-74/XL 75-85/XXL 90-100/XXXL 100up
+                            </p>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-warning active">
+                                  <input type="radio" name="options" id="option1" autocomplete="off" checked> S
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                  <input type="radio" name="options" id="option2" autocomplete="off"> M
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> L
+                                  </label>
+                                  <label class="btn btn-outline-warning">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> XL
+                                  </label>
+                                  <label class="btn btn-outline-warning">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> XXL
+                                  </label>
+                                  <label class="btn btn-outline-warning">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> XXXL
+                                  </label>
+                              </div>
+                            
+                            <form class="mt-2">
+                                <div class="form-group ticket" data-pay="350" data-money="350">
+                                    <label class="mt-4 c3">訂購數量：<input type="number" class="form-control many" value="1" min="1"></label>
+                                    <h3 class="mt-4 c3">
+                                        總價：
+                                        <span class="text-warning">NT</span>
+                                        <span class="text-warning" id="total">350</span>
+                                    </h3>
+                                </div>
+                                
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-outline-warning" data-target="#mok" data-toggle="modal" data-dismiss="modal">確認訂購</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- 咒術迴戰。 -->
+            <div class="modal fade" id="m2-2">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bgc1">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal" aria-label="close">&times;</button>
+                        </div>
+                        <div class="modal-body p-4">
+                            <img src="image/22.png" class="w-100">
+                            
+                            <div class="title c2 py-4 border-bottom border-warning">
+                                咒術迴戰。
+                            </div>
+
+                            <div class="btn-group btn-group-toggle mt-4" data-toggle="buttons">
+                                <label class="btn btn-outline-warning active">
+                                  <input type="radio" name="options" id="option1" autocomplete="off" checked> 男版
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                  <input type="radio" name="options" id="option2" autocomplete="off"> 女版
+                                </label>
+                              </div>
+                            
+                            <form class="mt-2">
+                                <div class="form-group ticket" data-pay="590" data-money="590">
+                                    <label class="mt-4 c3">訂購數量：<input type="number" class="form-control many" value="1" min="1"></label>
+                                    <h3 class="mt-4 c3">
+                                        總價：
+                                        <span class="text-warning">NT</span>
+                                        <span class="text-warning" id="total">590</span>
+                                    </h3>
+                                </div>
+                                
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-outline-warning" data-target="#mok" data-toggle="modal" data-dismiss="modal">確認訂購</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- 鬼滅之刃。 -->
+            <div class="modal fade" id="m2-3">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bgc1">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal" aria-label="close">&times;</button>
+                        </div>
+                        <div class="modal-body p-4">
+                            <img src="image/23.png" class="w-100">
+                            
+                            <div class="title c2 py-4 border-bottom border-warning">
+                                鬼滅之刃。
+                            </div>
+                            <p class="c4 pt-3">
+                                S 150-160/M 160-170/L 171-175/XL 175-180/XXL 181-185<br>
+                                S 40-52/M 50-60/L 65-74/XL 75-85/XXL 90-100/XXXL 100up
+                            </p>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-warning active">
+                                  <input type="radio" name="options" id="option1" autocomplete="off" checked> S
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                  <input type="radio" name="options" id="option2" autocomplete="off"> M
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> L
+                                  </label>
+                                  <label class="btn btn-outline-warning">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> XL
+                                  </label>
+                                  <label class="btn btn-outline-warning">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> XXL
+                                  </label>
+                                  <label class="btn btn-outline-warning">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> XXXL
+                                  </label>
+                              </div>
+                            
+                            <form class="mt-2">
+                                <div class="form-group ticket" data-pay="600" data-money="600">
+                                    <label class="mt-4 c3">訂購數量：<input type="number" class="form-control many" value="1" min="1"></label>
+                                    <h3 class="mt-4 c3">
+                                        總價：
+                                        <span class="text-warning">NT</span>
+                                        <span class="text-warning" id="total">600</span>
+                                    </h3>
+                                </div>
+                                
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-outline-warning" data-target="#mok" data-toggle="modal" data-dismiss="modal">確認訂購</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
     
             <!-- 經典重現 -->
             <section class="classic special container-fluid py">
@@ -330,7 +694,7 @@
     
             <div class="row">
                 <div class="col-md-4 col-6 p-0 m-0">
-                    <a href="">
+                    <a href="#" data-target="#m3-1" data-toggle="modal">
                         <div class="card card1 bgc1">
                             <img src="image/31.png" class="w-100">
                             <div class="black"></div>
@@ -341,12 +705,13 @@
                                 <p class="text c3">
                                     看不懂？快買件衣服裝懂。
                                 </p>
+                                <span class="c3">400$</span>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 col-6 p-0 m-0">
-                    <a href="">
+                    <a href="#" data-target="#m3-2" data-toggle="modal">
                         <div class="card card1 bgc1">
                             <img src="image/32.png" class="w-100">
                             <div class="black"></div>
@@ -357,12 +722,13 @@
                                 <p class="text c3">
                                     大...哥...哥...，買..T..恤..。
                                 </p>
+                                <span class="c3">360$</span>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 col-6 p-0 m-0">
-                    <a href="">
+                    <a href="#" data-target="#m3-3" data-toggle="modal">
                         <div class="card card1 bgc1">
                             <img src="image/33.png" class="w-100">
                             <div class="black"></div>
@@ -373,12 +739,155 @@
                                 <p class="text c3">
                                     大買特買之術。
                                 </p>
+                                <span class="c3">400$</span>
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
             </section>
+
+            <!-- 購買彈跳 -->
+            <!-- EVA。 -->
+            <div class="modal fade" id="m3-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bgc1">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal" aria-label="close">&times;</button>
+                        </div>
+                        <div class="modal-body p-4">
+                            <img src="image/31.png" class="w-100">
+                            
+                            <div class="title c2 py-4 border-bottom border-warning">
+                                EVA。
+                            </div>
+
+                            <div class="btn-group btn-group-toggle mt-4" data-toggle="buttons">
+                                <label class="btn btn-outline-warning active">
+                                  <input type="radio" name="options" id="option1" autocomplete="off" checked> 男版
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                  <input type="radio" name="options" id="option2" autocomplete="off"> 女版
+                                </label>
+                              </div>
+                            
+                            <form class="mt-2">
+                                <div class="form-group ticket" data-pay="400" data-money="400">
+                                    <label class="mt-4 c3">訂購數量：<input type="number" class="form-control many" value="1" min="1"></label>
+                                    <h3 class="mt-4 c3">
+                                        總價：
+                                        <span class="text-warning">NT</span>
+                                        <span class="text-warning" id="total">400</span>
+                                    </h3>
+                                </div>
+                                
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-outline-warning" data-target="#mok" data-toggle="modal" data-dismiss="modal">確認訂購</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- 鋼之煉金術師。 -->
+            <div class="modal fade" id="m3-2">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bgc1">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal" aria-label="close">&times;</button>
+                        </div>
+                        <div class="modal-body p-4">
+                            <img src="image/32.png" class="w-100">
+                            
+                            <div class="title c2 py-4 border-bottom border-warning">
+                                鋼之煉金術師。
+                            </div>
+
+                            <p class="c4 pt-3">
+                                S 150-160/M 160-170/L 171-175/XL 175-180/XXL 181-185<br>
+                                S 40-52/M 50-60/L 65-74/XL 75-85/XXL 90-100/XXXL 100up
+                            </p>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-warning active">
+                                  <input type="radio" name="options" id="option1" autocomplete="off" checked> S
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                  <input type="radio" name="options" id="option2" autocomplete="off"> M
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> L
+                                  </label>
+                                  <label class="btn btn-outline-warning">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> XL
+                                  </label>
+                                  <label class="btn btn-outline-warning">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> XXL
+                                  </label>
+                                  <label class="btn btn-outline-warning">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> XXXL
+                                  </label>
+                              </div>
+                            
+                            <form class="mt-2">
+                                <div class="form-group ticket" data-pay="360" data-money="360">
+                                    <label class="mt-4 c3">訂購數量：<input type="number" class="form-control many" value="1" min="1"></label>
+                                    <h3 class="mt-4 c3">
+                                        總價：
+                                        <span class="text-warning">NT</span>
+                                        <span class="text-warning" id="total">360</span>
+                                    </h3>
+                                </div>
+                                
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-outline-warning" data-target="#mok" data-toggle="modal" data-dismiss="modal">確認訂購</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- 火影忍者。 -->
+            <div class="modal fade" id="m3-3">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bgc1">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal" aria-label="close">&times;</button>
+                        </div>
+                        <div class="modal-body p-4">
+                            <img src="image/33.png" class="w-100">
+                            
+                            <div class="title c2 py-4 border-bottom border-warning">
+                                火影忍者。
+                            </div>
+
+                            <div class="btn-group btn-group-toggle mt-4" data-toggle="buttons">
+                                <label class="btn btn-outline-warning active">
+                                  <input type="radio" name="options" id="option1" autocomplete="off" checked> 男版
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                  <input type="radio" name="options" id="option2" autocomplete="off"> 女版
+                                </label>
+                              </div>
+                            
+                            <form class="mt-2">
+                                <div class="form-group ticket" data-pay="400" data-money="400">
+                                    <label class="mt-4 c3">訂購數量：<input type="number" class="form-control many" value="1" min="1"></label>
+                                    <h3 class="mt-4 c3">
+                                        總價：
+                                        <span class="text-warning">NT</span>
+                                        <span class="text-warning" id="total">400</span>
+                                    </h3>
+                                </div>
+                                
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-outline-warning" data-target="#mok" data-toggle="modal" data-dismiss="modal">確認訂購</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
     
             <!-- 宅宅互助區 -->
             <section class="aid special container-fluid py">
@@ -388,7 +897,7 @@
     
             <div class="row">
                 <div class="col-md-4 col-6 p-0 m-0">
-                    <a href="">
+                    <a href="#" data-target="#m4-1" data-toggle="modal">
                         <div class="card card1 bgc4">
                             <img src="image/41.png" class="w-100">
                             <div class="black"></div>
@@ -404,7 +913,7 @@
                     </a>
                 </div>
                 <div class="col-md-4 col-6 p-0 m-0">
-                    <a href="">
+                    <a href="#" data-target="#m4-2" data-toggle="modal">
                         <div class="card card1 bgc4">
                             <img src="image/42.png" class="w-100">
                             <div class="black"></div>
@@ -420,7 +929,7 @@
                     </a>
                 </div>
                 <div class="col-md-4 col-6 p-0 m-0">
-                    <a href="">
+                    <a href="#" data-target="#m4-3" data-toggle="modal">
                         <div class="card card1 bgc4">
                             <img src="image/43.png" class="w-100">
                             <div class="black"></div>
@@ -437,22 +946,620 @@
                 </div>
             </div>
             </section>
+
+            <!-- 購買彈跳 -->
+            <!-- 穿出五條悟大長腿。 -->
+            <div class="modal fade" id="m4-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bgc1">
+                        <div class="modal-header">
+                            <div class="text c3">
+                                穿出五條悟大長腿。
+                            </div>
+                            <button class="close" data-dismiss="modal" aria-label="close">&times;</button>
+                        </div>
+                        <div class="modal-body p-4">
+                            <img src="image/41.png" class="w-100">
+                            
+                            <div class="title c2 py-4 border-bottom border-warning">
+                                被五五分，但不會是五五身。
+                            </div>
+
+                            <div class="accordion" id="money">
+                                <div class="btn-group btn-group-toggle mt-4" data-toggle="buttons">
+                                    <label class="btn btn-outline-warning active">
+                                      <input data-toggle="collapse" data-target="#money1" aria-expanded="true" type="radio" name="options" id="option1" autocomplete="off" checked> 單購-上衣
+                                    </label>
+                                    <label class="btn btn-outline-warning">
+                                      <input data-toggle="collapse" data-target="#money2" aria-expanded="false" type="radio" name="options" id="option2" autocomplete="off"> 單購-下身
+                                    </label>
+                                    <label class="btn btn-outline-warning">
+                                        <input data-toggle="collapse" data-target="#money3" aria-expanded="false"  type="radio" name="options" id="option2" autocomplete="off"> 套裝
+                                      </label>
+                                </div>
+                            
+                                <div id="money1" class="collapse show" data-parent="#money">
+                                    <form class="mt-2">
+                                        <div class="form-group ticket" data-pay="400" data-money="400">
+                                            <label class="mt-4 c3">訂購數量：<input type="number" class="form-control many" value="1" min="1"></label>
+                                            <h3 class="mt-4 c3">
+                                                總價：
+                                                <span class="text-warning">NT</span>
+                                                <span class="text-warning" id="total">400</span>
+                                            </h3>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div id="money2" class="collapse" data-parent="#money">
+                                    <form class="mt-2">
+                                        <div class="form-group ticket" data-pay="390" data-money="390">
+                                            <label class="mt-4 c3">訂購數量：<input type="number" class="form-control many" value="1" min="1"></label>
+                                            <h3 class="mt-4 c3">
+                                                總價：
+                                                <span class="text-warning">NT</span>
+                                                <span class="text-warning" id="total">390</span>
+                                            </h3>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div id="money3" class="collapse" data-parent="#money">
+                                    <form class="mt-2">
+                                        <div class="form-group ticket" data-pay="750" data-money="750">
+                                            <label class="mt-4 c3">訂購數量：<input type="number" class="form-control many" value="1" min="1"></label>
+                                            <h3 class="mt-4 c3">
+                                                總價：
+                                                <span class="text-warning">NT</span>
+                                                <span class="text-warning" id="total">750</span>
+                                            </h3>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-outline-warning" data-target="#mok" data-toggle="modal" data-dismiss="modal">確認訂購</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 西裝斯文敗類們。 -->
+            <div class="modal fade" id="m4-2">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bgc1">
+                        <div class="modal-header">
+                            <div class="text c3">
+                                西裝斯文敗類們。
+                            </div>
+                            <button class="close" data-dismiss="modal" aria-label="close">&times;</button>
+                        </div>
+                        <div class="modal-body p-4">
+                            <img src="image/42.png" class="w-100">
+                            
+                            <div class="title c2 py-4 border-bottom border-warning">
+                                優雅又不失設計感。
+                            </div>
+
+                            <div class="accordion" id="moneyb">
+                                <div class="btn-group btn-group-toggle mt-4" data-toggle="buttons">
+                                    <label class="btn btn-outline-warning active">
+                                      <input data-toggle="collapse" data-target="#money1" aria-expanded="true" type="radio" name="options" id="option1" autocomplete="off" checked> 單購-西裝外套
+                                    </label>
+                                    <label class="btn btn-outline-warning">
+                                      <input data-toggle="collapse" data-target="#money2" aria-expanded="false" type="radio" name="options" id="option2" autocomplete="off"> 單購-襯衫
+                                    </label>
+                                    <label class="btn btn-outline-warning">
+                                        <input data-toggle="collapse" data-target="#money3" aria-expanded="false" type="radio" name="options" id="option2" autocomplete="off"> 單購-領帶
+                                      </label>
+                                    <label class="btn btn-outline-warning">
+                                        <input data-toggle="collapse" data-target="#money4" aria-expanded="false"  type="radio" name="options" id="option2" autocomplete="off"> 套裝
+                                      </label>
+                                </div>
+                            
+                                <div id="money1" class="collapse show" data-parent="#moneyb">
+                                    <form class="mt-2">
+                                        <div class="form-group ticket" data-pay="800" data-money="800">
+                                            <label class="mt-4 c3">訂購數量：<input type="number" class="form-control many" value="1" min="1"></label>
+                                            <h3 class="mt-4 c3">
+                                                總價：
+                                                <span class="text-warning">NT</span>
+                                                <span class="text-warning" id="total">800</span>
+                                            </h3>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div id="money2" class="collapse" data-parent="#moneyb">
+                                    <form class="mt-2">
+                                        <div class="form-group ticket" data-pay="500" data-money="500">
+                                            <label class="mt-4 c3">訂購數量：<input type="number" class="form-control many" value="1" min="1"></label>
+                                            <h3 class="mt-4 c3">
+                                                總價：
+                                                <span class="text-warning">NT</span>
+                                                <span class="text-warning" id="total">500</span>
+                                            </h3>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div id="money3" class="collapse" data-parent="#moneyb">
+                                    <form class="mt-2">
+                                        <div class="form-group ticket" data-pay="390" data-money="390">
+                                            <label class="mt-4 c3">訂購數量：<input type="number" class="form-control many" value="1" min="1"></label>
+                                            <h3 class="mt-4 c3">
+                                                總價：
+                                                <span class="text-warning">NT</span>
+                                                <span class="text-warning" id="total">390</span>
+                                            </h3>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div id="money4" class="collapse" data-parent="#moneyb">
+                                    <form class="mt-2">
+                                        <div class="form-group ticket" data-pay="1600" data-money="1600">
+                                            <label class="mt-4 c3">訂購數量：<input type="number" class="form-control many" value="1" min="1"></label>
+                                            <h3 class="mt-4 c3">
+                                                總價：
+                                                <span class="text-warning">NT</span>
+                                                <span class="text-warning" id="total">1600</span>
+                                            </h3>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-outline-warning" data-target="#mok" data-toggle="modal" data-dismiss="modal">確認訂購</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 龐克穿搭。 -->
+            <div class="modal fade" id="m4-3">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bgc1">
+                        <div class="modal-header">
+                            <div class="text c3">
+                                龐克穿搭。
+                            </div>
+                            <button class="close" data-dismiss="modal" aria-label="close">&times;</button>
+                        </div>
+                        <div class="modal-body p-4">
+                            <img src="image/43.png" class="w-100">
+                            
+                            <div class="title c2 py-4 border-bottom border-warning">
+                                NaNa輕暗黑風格。
+                            </div>
+
+                            <div class="accordion" id="moneyc">
+                                <div class="btn-group btn-group-toggle mt-4" data-toggle="buttons">
+                                    <label class="btn btn-outline-warning active">
+                                      <input data-toggle="collapse" data-target="#money1" aria-expanded="true" type="radio" name="options" id="option1" autocomplete="off" checked> 單購-上身
+                                    </label>
+                                    <label class="btn btn-outline-warning">
+                                      <input data-toggle="collapse" data-target="#money2" aria-expanded="false" type="radio" name="options" id="option2" autocomplete="off"> 單購-下身
+                                    </label>
+                                    <label class="btn btn-outline-warning">
+                                        <input data-toggle="collapse" data-target="#money3" aria-expanded="false" type="radio" name="options" id="option2" autocomplete="off"> 單購-配件
+                                      </label>
+                                    <label class="btn btn-outline-warning">
+                                        <input data-toggle="collapse" data-target="#money4" aria-expanded="false"  type="radio" name="options" id="option2" autocomplete="off"> 套裝
+                                      </label>
+                                </div>
+                            
+                                <div id="money1" class="collapse show" data-parent="#moneyc">
+                                    <form class="mt-2">
+                                        <div class="form-group ticket" data-pay="800" data-money="800">
+                                            <label class="mt-4 c3">訂購數量：<input type="number" class="form-control many" value="1" min="1"></label>
+                                            <h3 class="mt-4 c3">
+                                                總價：
+                                                <span class="text-warning">NT</span>
+                                                <span class="text-warning" id="total">800</span>
+                                            </h3>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div id="money2" class="collapse" data-parent="#moneyc">
+                                    <form class="mt-2">
+                                        <div class="form-group ticket" data-pay="430" data-money="430">
+                                            <label class="mt-4 c3">訂購數量：<input type="number" class="form-control many" value="1" min="1"></label>
+                                            <h3 class="mt-4 c3">
+                                                總價：
+                                                <span class="text-warning">NT</span>
+                                                <span class="text-warning" id="total">430</span>
+                                            </h3>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div id="money3" class="collapse" data-parent="#moneyc">
+                                    <form class="mt-2">
+                                        <div class="form-group ticket" data-pay="290" data-money="290">
+                                            <label class="mt-4 c3">訂購數量：<input type="number" class="form-control many" value="1" min="1"></label>
+                                            <h3 class="mt-4 c3">
+                                                總價：
+                                                <span class="text-warning">NT</span>
+                                                <span class="text-warning" id="total">290</span>
+                                            </h3>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div id="money4" class="collapse" data-parent="#moneyc">
+                                    <form class="mt-2">
+                                        <div class="form-group ticket" data-pay="1600" data-money="1600">
+                                            <label class="mt-4 c3">訂購數量：<input type="number" class="form-control many" value="1" min="1"></label>
+                                            <h3 class="mt-4 c3">
+                                                總價：
+                                                <span class="text-warning">NT</span>
+                                                <span class="text-warning" id="total">1500</span>
+                                            </h3>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-outline-warning" data-target="#mok" data-toggle="modal" data-dismiss="modal">確認訂購</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
+
+        <!-- 短褲 -->
         <div class="tab-pane fade" id="lower" role="tabpanel">
+            
+            <section class="bachelor special container-fluid py">
+                <div class="row">
+                    <div class="col-md-4 col-6 p-0 m-0">
+                        <a href="#" data-target="#mB1" data-toggle="modal">
+                            <div class="card card1 bgc1">
+                                <img src="image/44.png" class="w-100">
+                                <div class="black"></div>
+                                <div class="font m-5 fadeInDown wow">
+                                    <div class="title h1 c2">
+                                        新世紀福音戰士短褲
+                                    </div>
+                                    <span class="c3">450$</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-6 p-0 m-0">
+                        <a href="#" data-target="#mB2" data-toggle="modal">
+                            <div class="card card1 bgc1">
+                                <img src="image/45.png" class="w-100">
+                                <div class="black"></div>
+                                <div class="font m-5 fadeInDown wow">
+                                    <div class="title h1 c2">
+                                        海賊王短褲
+                                    </div>
+                                    <span class="c3">500$</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
             <div class="title c2 p-5">
                 敬請期待...
             </div>
+
+            <!-- 購買彈跳 -->
+            <!-- 新世紀福音戰士短褲 -->
+            <div class="modal fade" id="mB1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bgc1">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal" aria-label="close">&times;</button>
+                        </div>
+                        <div class="modal-body p-4">
+                            <img src="image/44.png" class="w-100">
+                            
+                            <div class="title c2 py-4 border-bottom border-warning">
+                                新世紀福音戰士短褲
+                            </div>
+
+                            <p class="c4 pt-3">
+                                M 160-170/L 171-175/XL 175-180<br>
+                                M 50-60/L 65-74/XL 75-85/XXL 90-100
+                            </p>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-warning active">
+                                  <input type="radio" name="options" id="option1" autocomplete="off" checked> M
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                  <input type="radio" name="options" id="option2" autocomplete="off"> L
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> XL
+                                  </label>
+                                  <label class="btn btn-outline-warning">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> XXL
+                                  </label>
+                              </div>
+                            
+                            <form class="mt-2">
+                                <div class="form-group ticket" data-pay="450" data-money="450">
+                                    <label class="mt-4 c3">訂購數量：<input type="number" class="form-control many" value="1" min="1"></label>
+                                    <h3 class="mt-4 c3">
+                                        總價：
+                                        <span class="text-warning">NT</span>
+                                        <span class="text-warning" id="total">450</span>
+                                    </h3>
+                                </div>
+                                
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-outline-warning" data-target="#mok" data-toggle="modal" data-dismiss="modal">確認訂購</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!-- 海賊王短褲 -->
+            <div class="modal fade" id="mB2">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bgc1">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal" aria-label="close">&times;</button>
+                        </div>
+                        <div class="modal-body p-4">
+                            <img src="image/45.png" class="w-100">
+                            
+                            <div class="title c2 py-4 border-bottom border-warning">
+                                海賊王短褲
+                            </div>
+
+                            <p class="c4 pt-3">
+                                M 160-170/L 171-175/XL 175-180<br>
+                                M 50-60/L 65-74/XL 75-85/XXL 90-100
+                            </p>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-warning active">
+                                  <input type="radio" name="options" id="option1" autocomplete="off" checked> M
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                  <input type="radio" name="options" id="option2" autocomplete="off"> L
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> XL
+                                  </label>
+                                  <label class="btn btn-outline-warning">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> XXL
+                                  </label>
+                              </div>
+                            
+                            <form class="mt-2">
+                                <div class="form-group ticket" data-pay="500" data-money="500">
+                                    <label class="mt-4 c3">訂購數量：<input type="number" class="form-control many" value="1" min="1"></label>
+                                    <h3 class="mt-4 c3">
+                                        總價：
+                                        <span class="text-warning">NT</span>
+                                        <span class="text-warning" id="total">500</span>
+                                    </h3>
+                                </div>
+                                
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-outline-warning" data-target="#mok" data-toggle="modal" data-dismiss="modal">確認訂購</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
         </div>
+
+        <!-- 襪子 -->
         <div class="tab-pane fade" id="sock" role="tabpanel">
+            
+            <section class="bachelor special container-fluid py">
+        
+                <div class="row">
+                    <div class="col-md-4 col-6 p-0 m-0">
+                        <a href="#" data-target="#mC1" data-toggle="modal">
+                            <div class="card card1 bgc1">
+                                <img src="image/46.png" class="w-100">
+                                <div class="black"></div>
+                                <div class="font m-5 fadeInDown wow">
+                                    <div class="title h1 c2">
+                                        海賊王長襪
+                                    </div>
+                                    <span class="c3">120$</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-6 p-0 m-0">
+                        <a href="#" data-target="#mC2" data-toggle="modal">
+                            <div class="card card1 bgc1">
+                                <img src="image/47.png" class="w-100">
+                                <div class="black"></div>
+                                <div class="font m-5 fadeInDown wow">
+                                    <div class="title h1 c2">
+                                        新世紀福音戰士長襪
+                                    </div>
+                                    <span class="c3">120$</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
             <div class="title c2 p-5">
                 敬請期待...
             </div>
+
+            <!-- 海賊王長襪 -->
+            <div class="modal fade" id="mC1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bgc1">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal" aria-label="close">&times;</button>
+                        </div>
+                        <div class="modal-body p-4">
+                            <img src="image/46.png" class="w-100">
+                            
+                            <div class="title c2">
+                                海賊王長襪<br>
+                                
+                            </div>
+                            <p class="c4 pb-4 border-bottom border-warning">襪子經售出後恕不接受退貨</p>
+
+                            <div class="btn-group btn-group-toggle mt-4" data-toggle="buttons">
+                                <label class="btn btn-outline-warning active">
+                                  <input type="radio" name="options" id="option1" autocomplete="off" checked> 成人
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                  <input type="radio" name="options" id="option2" autocomplete="off"> 小孩
+                                </label>
+                              </div>
+                            
+                            <form class="mt-2">
+                                <div class="form-group ticket" data-pay="120" data-money="120">
+                                    <label class="mt-4 c3">訂購數量：<input type="number" class="form-control many" value="1" min="1"></label>
+                                    <h3 class="mt-4 c3">
+                                        總價：
+                                        <span class="text-warning">NT</span>
+                                        <span class="text-warning" id="total">120</span>
+                                    </h3>
+                                </div>
+                                
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-outline-warning" data-target="#mok" data-toggle="modal" data-dismiss="modal">確認訂購</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            
+            <!-- 新世紀福音戰士長襪 -->
+            <div class="modal fade" id="mC2">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bgc1">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal" aria-label="close">&times;</button>
+                        </div>
+                        <div class="modal-body p-4">
+                            <img src="image/47.png" class="w-100">
+                            
+                            <div class="title c2">
+                                新世紀福音戰士長襪<br>
+                            </div>
+                            <p class="c4 pb-4 border-bottom border-warning">襪子經售出後恕不接受退貨</p>
+
+                            <div class="btn-group btn-group-toggle mt-4" data-toggle="buttons">
+                                <label class="btn btn-outline-warning active">
+                                  <input type="radio" name="options" id="option1" autocomplete="off" checked> 成人
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                  <input type="radio" name="options" id="option2" autocomplete="off"> 小孩
+                                </label>
+                              </div>
+                            
+                            <form class="mt-2">
+                                <div class="form-group ticket" data-pay="120" data-money="120">
+                                    <label class="mt-4 c3">訂購數量：<input type="number" class="form-control many" value="1" min="1"></label>
+                                    <h3 class="mt-4 c3">
+                                        總價：
+                                        <span class="text-warning">NT</span>
+                                        <span class="text-warning" id="total">120</span>
+                                    </h3>
+                                </div>
+                                
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-outline-warning" data-target="#mok" data-toggle="modal" data-dismiss="modal">確認訂購</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
         </div>
+
         <div class="tab-pane fade" id="Accessories" role="tabpanel">
+            <!-- 配件 -->
+            <section class="bachelor special container-fluid py">
+        
+                <div class="row">
+                    <div class="col-md-4 col-6 p-0 m-0">
+                        <a href="#" data-target="#mD1" data-toggle="modal">
+                            <div class="card card1 bgc1">
+                                <img src="image/48.png" class="w-100">
+                                <div class="black"></div>
+                                <div class="font m-5 fadeInDown wow">
+                                    <div class="title h1 c2 ">
+                                        海賊王鴨舌帽
+                                    </div>
+                                    <span class="c3">120$</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
             <div class="title c2 p-5">
                 敬請期待...
             </div>
+
+            <!-- 海賊王鴨舌帽 -->
+            <div class="modal fade" id="mD1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bgc1">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal" aria-label="close">&times;</button>
+                        </div>
+                        <div class="modal-body p-4">
+                            <img src="image/48.png" class="w-100">
+                            
+                            <div class="title c2">
+                                海賊王鴨舌帽<br>
+                                
+                            </div>
+
+                            <div class="btn-group btn-group-toggle mt-4" data-toggle="buttons">
+                                <label class="btn btn-outline-warning active">
+                                  <input type="radio" name="options" id="option1" autocomplete="off" checked> 成人
+                                </label>
+                                <label class="btn btn-outline-warning">
+                                  <input type="radio" name="options" id="option2" autocomplete="off"> 小孩
+                                </label>
+                              </div>
+                            
+                            <form class="mt-2">
+                                <div class="form-group ticket" data-pay="120" data-money="120">
+                                    <label class="mt-4 c3">訂購數量：<input type="number" class="form-control many" value="1" min="1"></label>
+                                    <h3 class="mt-4 c3">
+                                        總價：
+                                        <span class="text-warning">NT</span>
+                                        <span class="text-warning" id="total">120</span>
+                                    </h3>
+                                </div>
+                                
+                                <div class="text-center mt-5">
+                                    <button class="btn btn-outline-warning" data-target="#mok" data-toggle="modal" data-dismiss="modal">確認訂購</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
         </div>
+    </div>
+
+
+    <!-- 成功加入購物車 -->
+    <div class="modal fade" id="mok">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-body p-4 text-center bgc1">
+                    <img src="image/ok.png" class="w-100 ok">
+                    <div class="text-warning pt-5">商品已成功加入購物車</div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
     
 

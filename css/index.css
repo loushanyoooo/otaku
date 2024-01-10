@@ -36,3 +36,12 @@
     right: 5%;
     position: absolute;
 }
+
+.sale .title{
+    font-size: 5rem;
+}
+.sale .text{
+    font-size: 1.5rem;
+    height: 30%;
+    margin-top: 10%;
+}
